@@ -172,6 +172,7 @@ header .header-cases
 {
     font-family: Catamaran;
     font-size: 50px;
+    line-height: 50px;
     color: #fff;
     text-align: center;
     text-shadow: 2px 2px 8px #111;
@@ -180,6 +181,8 @@ header .header-cases
 {
     font-family: Cormorant Garamond;
     font-size: 28px;
+    font-style: italic;
+    line-height: 40px;
     color: #fff;
     text-align: center;
     text-shadow: 2px 2px 8px #111;
