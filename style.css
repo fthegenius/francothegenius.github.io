@@ -108,10 +108,11 @@ input, select {
 {
     text-decoration: none;
 }
-body
+/*body
 {
     background-color: #f3f3f3;
 }
+*/
 header
 {
     background-color: #fff;
@@ -165,9 +166,14 @@ header .header-cases
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    display: table;
 
 }
-
+.text-center
+{
+    display: table-cell;
+    vertical-align: middle;
+}
 .index-banner h2
 {
     font-family: Catamaran;
@@ -182,8 +188,53 @@ header .header-cases
     font-family: Cormorant Garamond;
     font-size: 28px;
     font-style: italic;
-    line-height: 40px;
+    line-height: 70px;
     color: #fff;
     text-align: center;
     text-shadow: 2px 2px 8px #111;
+}
+/*boxes index*/
+.index-links div
+{
+    margin: 16px 16px 0px;
+    width: calc(100% - 32px);
+    height: 100px;
+    background-color: #f2f2f2;
+
+}
+.index-links div h3
+{
+    font-family: Catamaran;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 100px;
+    color: #111;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/*footer*/
+footer
+{
+    width: calc(100% - 80px);
+    padding: 40px 40px;
+    margin-top: 20px;
+    background-color: #111;
+}
+footer ul
+{
+    width: fit-content;
+    float: left;
+    padding-left: 20px;
+}
+footer ul li
+{
+    display: block;
+    list-style: none;
+}
+footer ul li a
+{
+    font-family: Catamaran;
+    font-size: 14px;
+    color: #fff;
 }
