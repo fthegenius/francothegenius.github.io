@@ -113,8 +113,16 @@ input, select {
     background-color: #f3f3f3;
 }
 */
+main
+{
+    padding-top: 100px;
+}
 header
 {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
     background-color: #fff;
     width: 100%;
     height: 100px;
@@ -152,7 +160,7 @@ header nav ul li a
     font-size: 16px;
     color: #111;
 }
-header .header-cases
+header .header-blog
 {
     display: none;
 }
@@ -176,7 +184,7 @@ header .header-cases
     {
         line-height: 60px;
     }
-    header .header-cases
+    header .header-blog
     {
         display: block;
         font-family: Catamaran;
@@ -285,6 +293,55 @@ header .header-cases
     }
 }
 
+/*Portfolio*/
+.portfolio-links
+{
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.portfolio-links h2
+{
+    font-family: Catamaran;
+    font-size: 28px;
+    font-weight: 600;
+    color: #111;
+    text-transform: uppercase;
+}
+.portfolio-links .wrapper p
+{
+    font-family: Catamaran;
+    font-size: 20px;
+    font-weight: 600;
+    color: #111;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 120px;
+}
+.portfolio-links .wrapper div
+{
+    margin: 16px 16px 0px;
+    width: calc(100% - 32px);
+    height: 100px;
+    background-color: #f2f2f2;
+}
+/*code when we hit a desktop version*/
+@media only screen and (min-width: 1000px){
+    .portfolio-links .wrapper div
+    {
+        float: left;
+        width: 230px;
+        height: 230px;
+        margin: 20px 10px 0px;
+        background-color: #e3e3e3;
+    }
+    .portfolio-links .wrapper p
+    {
+        padding-top: 45%;
+        text-align: center;
+        line-height: 20px;
+    }
+
+}
 /*footer*/
 footer
 {
@@ -316,6 +373,11 @@ footer ul li a
 .footer-cases{
     display: none; /*blocks from devices*/
 }
+.footer-cases li a
+{
+    font-size: 18px;
+}
+
 .footer-social
 {
     width: 60px;
@@ -339,7 +401,7 @@ footer ul li a
     footer ul li p
     {
         font-family: Catamaran;
-        font-size: 24px;
+        font-size: 20px;
         color: #fff;
         line-height: 40px;
     }
