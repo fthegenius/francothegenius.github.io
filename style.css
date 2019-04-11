@@ -169,23 +169,25 @@ header .header-cases
     }
     header nav ul
     {
-        margin: 20px;
+        margin: 20px 0px 0px 20px;
         float: left;
     }
-    header nav ul li
-    {
-        display: inline-block;
-        float: left;
-        list-style: none;
-        padding: 0 16px;
-    }
-
     header nav ul li a
     {
+        line-height: 60px;
+    }
+    header .header-cases
+    {
+        display: block;
         font-family: Catamaran;
         font-size: 16px;
         color: #111;
-        line-height: 60px;
+        line-height: 38px;
+        border: 1px solid #111;
+        float: right;
+        margin-right: 40px;
+        margin-top: 30px;
+        padding: 0px 20px;
     }
 }
 
@@ -245,6 +247,44 @@ header .header-cases
     text-transform: uppercase;
 }
 
+/*code when we hit a desktop version*/
+@media only screen and (min-width: 1000px){
+    .wrapper
+    {
+        width: 1000px;
+        margin: 0 auto;
+    }
+    .index-banner
+    {
+        height: 450px;
+    }
+    .index-links
+    {
+        overflow: hidden;
+
+    }
+    .index-links div
+    {
+        margin: 20px 10px 0;
+        height: 230px;
+        background-color: #f2f2f2;
+        float: left;
+
+    }
+    .index-box-square
+    {
+        width: calc(25% - 20px) !important;
+    }
+    .index-box-rec
+    {
+        width: calc(50% - 20px) !important;
+    }
+    .index-links div h3
+    {
+        line-height: 230px;
+    }
+}
+
 /*footer*/
 footer
 {
@@ -285,4 +325,22 @@ footer ul li a
 {
     width: 100%;
     margin-bottom: 10px;
+}
+/*code when we hit a desktop version*/
+@media only screen and (min-width: 1000px){
+    .footer-cases{
+        display:block;
+    }
+    footer ul
+    {
+
+        padding-right: 50px;
+    }
+    footer ul li p
+    {
+        font-family: Catamaran;
+        font-size: 24px;
+        color: #fff;
+        line-height: 40px;
+    }
 }
