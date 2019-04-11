@@ -156,6 +156,38 @@ header .header-cases
 {
     display: none;
 }
+/*code when we hit a desktop version*/
+@media only screen and (min-width: 1000px){
+    header .header-brand
+    {
+        margin:31px 0; /*(100px - 31)/2*/
+        text-align: left;
+        line-height: 38px;
+        padding: 0 20px 0 40px;
+        border-right: 3px solid #111;
+        float: left;
+    }
+    header nav ul
+    {
+        margin: 20px;
+        float: left;
+    }
+    header nav ul li
+    {
+        display: inline-block;
+        float: left;
+        list-style: none;
+        padding: 0 16px;
+    }
+
+    header nav ul li a
+    {
+        font-family: Catamaran;
+        font-size: 16px;
+        color: #111;
+        line-height: 60px;
+    }
+}
 
 /*index*/
 .index-banner
@@ -219,7 +251,9 @@ footer
     width: calc(100% - 80px);
     padding: 40px 40px;
     margin-top: 20px;
+    margin-bottom: 10px;
     background-color: #111;
+    overflow: hidden;
 }
 footer ul
 {
@@ -235,6 +269,20 @@ footer ul li
 footer ul li a
 {
     font-family: Catamaran;
-    font-size: 14px;
+    font-size: 24px;
     color: #fff;
+    line-height: 40px;
+}
+.footer-cases{
+    display: none; /*blocks from devices*/
+}
+.footer-social
+{
+    width: 60px;
+    float: right;
+}
+.footer-social img
+{
+    width: 100%;
+    margin-bottom: 10px;
 }
