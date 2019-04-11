@@ -342,6 +342,61 @@ header .header-blog
     }
 
 }
+
+/*projects*/
+.portfolio-link h2
+{
+    font-family: Catamaran;
+    font-size: 28px;
+    font-weight: 600;
+    color: #111;
+    text-align: center;
+    text-transform: uppercase;
+}
+.portfolio-link video
+{
+    width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.portfolio-link article h3
+{
+    font-family: Catamaran;
+    font-size: 28px;
+    font-weight: 600;
+    color: #111;
+    text-transform: uppercase;
+    display: block;
+}
+.portfolio-link article p
+{
+    font-family: Catamaran;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #111;
+    text-transform: uppercase;
+    column-count: 1;
+    column-gap: 30px;
+}
+/*code when we hit a desktop version*/
+@media only screen and (min-width: 1000px)
+{
+    .portfolio-link video
+    {
+        width: 60%;
+        display: block;
+        margin: 0 auto;
+        padding: 30px 0;
+    }
+    .portfolio-link article p
+    {
+        column-count: 3;
+    }
+}
+
 /*footer*/
 footer
 {
