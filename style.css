@@ -399,6 +399,53 @@ header .header-blog
     }
 }
 
+/*Contact*/
+.contact-card .wrapper
+{
+    margin: 16px 16px 0px;
+    width: calc(100% - 32px);
+    height: 200px;
+    background-color: #f2f2f2;
+}
+.contact-card .wrapper h3
+{
+    font-family: Catamaran;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 60px;
+    color: #111;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+.contact-card .wrapper h2
+{
+    font-family: Catamaran;
+    font-size: 22px;
+    line-height: 40px;
+    color: #111;
+    padding-left: 9px;
+}
+.contact-card .wrapper h1
+{
+    font-family: Catamaran;
+    font-weight: 200;
+    line-height: 25px;
+    font-size: 20px;
+    color: #111;
+    padding-left: 5px;
+}
+
+/*code when we hit a desktop version*/
+@media only screen and (min-width: 1000px){
+    .contact-card .wrapper
+    {
+        width: 960px;
+        margin: auto;
+    }
+
+}
+
 /*footer*/
 footer
 {
@@ -409,6 +456,7 @@ footer
     background-color: #111;
     overflow: hidden;
 }
+
 footer ul
 {
     width: fit-content;
