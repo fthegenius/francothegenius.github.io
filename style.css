@@ -369,6 +369,8 @@ header .header-blog
     color: #111;
     text-transform: uppercase;
     display: block;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 .portfolio-link article p
 {
@@ -430,7 +432,7 @@ footer ul li a
 }
 .footer-cases li a
 {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .footer-social
