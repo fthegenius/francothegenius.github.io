@@ -435,6 +435,27 @@ header .header-blog
     color: #111;
     padding-left: 5px;
 }
+.contact-forms h3
+{
+    font-family: Catamaran;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 60px;
+    color: #111;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+input, textarea{
+    display: block;
+    width: 100%;
+    line-height: 40px;
+    margin-left: 5px;
+    font-family: Catamaran;
+    font-size: 16px;
+}
+
+
 
 /*code when we hit a desktop version*/
 @media only screen and (min-width: 1000px){
