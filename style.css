@@ -404,7 +404,7 @@ header .header-blog
 {
     margin: 16px 16px 0px;
     width: calc(100% - 32px);
-    height: 200px;
+    height: 180px;
     background-color: #f2f2f2;
 }
 .contact-card .wrapper h3
@@ -412,7 +412,7 @@ header .header-blog
     font-family: Catamaran;
     font-size: 24px;
     font-weight: 600;
-    line-height: 60px;
+    line-height: 50px;
     color: #111;
     text-align: center;
     text-transform: uppercase;
@@ -435,6 +435,7 @@ header .header-blog
     color: #111;
     padding-left: 5px;
 }
+
 .contact-forms h3
 {
     font-family: Catamaran;
@@ -446,12 +447,28 @@ header .header-blog
     text-transform: uppercase;
     margin-top: 20px;
 }
-input, textarea{
+
+.contact-form input, textarea{
     display: block;
     width: 100%;
-    line-height: 40px;
+    line-height: 50px;
     font-family: Catamaran;
-    font-size: 16px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    border: 1px solid #111;
+}
+.contact-form
+{
+    margin-bottom: 100px;
+}
+.contact-form button
+{
+    background-color: #f2f2f2;
+    display: block;
+    font-size: 20px;
+    font-family: Catamaran;
+    margin: 0 auto;
+    border: 1px solid #111;
 }
 
 
