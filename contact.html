@@ -7,6 +7,9 @@
         <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900
         |Cormorant+Garamond:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
+        <script>
+            $(document).ready(function(){ $('body').find('img[src$="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000webhost-white2.png"]').remove();}); </script>
+        <style>img[src*="000webhost"]{display: none !important;}</style>
     </head>
     <body>
         <header>
@@ -26,16 +29,16 @@
                         <h3>Send me an e-mail</h3>
                         <form class="contact-form" action="contactform.php" method="post">
                             <div>
-                                <input type="text" name="name" placeholder="Full name">
+                                <input type="text" name="name" placeholder="Full name" required>
                             </div>
                             <div>
-                                <input type="text" name="e-mail" placeholder="Your e-mail">
+                                <input type="text" name="email" placeholder="Your e-mail" required>
                             </div>
                             <div>
-                                <input type="text" name="subject" placeholder="Subject">
+                                <input type="text" name="subject" placeholder="Subject" required>
                             </div>
                             <div >
-                                <textarea name="message" placeholder="Message"></textarea>
+                                <textarea name="message" placeholder="Message" required></textarea>
                             </div>
                             <div>
                                 <button type="submit" name="button">SEND MAIL</button>
