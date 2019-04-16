@@ -10,6 +10,7 @@
         <script>
             $(document).ready(function(){ $('body').find('img[src$="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000webhost-white2.png"]').remove();}); </script>
         <style>img[src*="000webhost"]{display: none !important;}</style>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     </head>
     <body>
         <header>
@@ -27,23 +28,30 @@
                 <div class="wrapper">
                     <div class="contact-forms">
                         <h3>Send me an e-mail</h3>
-                        <form class="contact-form" action="contactform.php" method="post">
+                        <form class="contact-form" name="form" action="contactform.php" method="post">
                             <div>
-                                <input type="text" name="name" placeholder="Full name" required>
+                                <input type="text" name="name" id="name" placeholder="Full name" required pattern="[a-zA-Z]{3,30}$">
                             </div>
                             <div>
-                                <input type="text" name="email" placeholder="Your e-mail" required>
+                                <input type="text" name="email" id="email"placeholder="Your e-mail" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
                             </div>
                             <div>
-                                <input type="text" name="subject" placeholder="Subject" required>
+                                <input type="text" name="subject" id="subject" placeholder="Subject" required>
                             </div>
                             <div >
-                                <textarea name="message" placeholder="Message" required></textarea>
+                                <textarea name="message" id="message"placeholder="Message" required></textarea>
                             </div>
                             <div>
-                                <button type="submit" name="button">SEND MAIL</button>
+                                <button type="submit" onclick="confirmation();"name="button">SEND MAIL</button>
                             </div>
                         </form>
+                        <script type="text/javascript">
+                            function confirmation() {
+                                if (document.getElementById('name').value != "" && document.getElementById('email').value != "" && document.getElementById('subject').value != "" && document.getElementById('message').value != "") {
+                                    swal("E-mail sent!", "I´ll contact you soon!", "success");
+                                }
+                            }
+                        </script>
                     </div>
                 </div>
             <section class="contact-card">
@@ -62,18 +70,18 @@
                         <li><a href="index.html">Home</a></li>
                         <li><a href="#">Cases</a></li>
                         <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="#">About me</a></li>
+                        <li><a href="aboutme.html">About me</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                     <ul class="footer-cases">
-                        <li><p>Latest Cases</p></li>
-                        <li><a href="#"> blah</a></li>
-                        <li><a href="#">blah</a></li>
-                        <li><a href="#">blah</a></li>
-                        <li><a href="#">blah</a></li>
+                        <li><p>Latest Projects</p></li>
+                        <li><a href="#">Coming soon</a></li>
+                        <li><a href="#">Coming soon</a></li>
+                        <li><a href="#">Coming soon</a></li>
+                        <li><a href="#">Coming soon</a></li>
                     </ul>
                     <div class="footer-social">
-                        <a href="#">
+                        <a href="contact.html">
                             <img src="img/mail.png" alt="mail logo">
                         </a>
                         <a href="https://github.com/fthegenius" target="_blank">
