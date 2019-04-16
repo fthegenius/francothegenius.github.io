@@ -371,8 +371,6 @@ header .header-blog
     line-height: 24px;
     color: #111;
     margin: 10px 15px 10px 15px;
-    display: inline-block;
-    vertical-align: top;
 
 }
 .about-me img
@@ -383,7 +381,19 @@ header .header-blog
     border-radius: 50%;
     margin: 10px 0px 0px 5px;
 }
-
+@media only screen and (min-width: 1000px)
+{
+    .about-me img
+    {
+        margin: 0px 0px 0px 5px;
+        width: 250px;
+    }
+    .about-me article p
+    {
+        font-size: 20px;
+        font-weight: 200;
+    }
+}
 
 /*projects*/
 .portfolio-link h2
