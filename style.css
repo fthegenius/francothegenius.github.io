@@ -353,6 +353,7 @@ header .header-blog
     text-transform: uppercase;
     margin-bottom: 20px;
     margin-top: 30px;
+    text-align: center;
 }
 .about-me h2
 {
@@ -416,10 +417,24 @@ header .header-blog
         font-size: 20px;
         font-weight: 200;
     }
-    .column
+    .column-2
     {
         float: left;
         width: 45%;
+        padding: 10px;
+        height: 250px;
+        border-left: 1px solid #111;
+        margin-bottom: 20px;
+    }
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .column-3
+    {
+        float: left;
+        width: 30.33%;
         padding: 10px;
         height: 250px;
         border-left: 1px solid #111;
