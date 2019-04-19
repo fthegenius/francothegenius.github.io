@@ -352,7 +352,9 @@ header .header-blog
     font-weight: 600;
     color: #111;
     text-transform: uppercase;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+
 }
 .about-me h3
 {
@@ -393,6 +395,14 @@ header .header-blog
         font-size: 20px;
         font-weight: 200;
     }
+    .column
+    {
+        float: left;
+        width: 45%;
+        padding: 10px;
+        height: 200px;
+    }
+
 }
 
 /*projects*/
